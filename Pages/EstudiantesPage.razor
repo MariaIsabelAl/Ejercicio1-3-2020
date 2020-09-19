@@ -59,7 +59,6 @@
 </EditForm>
 
 @code{
-    EstudiantesBll bll;
 
     [Parameter]
     public int EstudianteId { get; set; }
@@ -82,7 +81,7 @@
        
         if(estudiante.EstudianteId>0)
         {
-            var encontrado = bll.Buscar(estudiante.EstudianteId);
+            var encontrado = EstudiantesBll.Buscar(estudiante.EstudianteId);
 
             if(encontrado != null)
                 this.estudiante= encontrado;
@@ -95,7 +94,7 @@
     {
         bool guardo;
 
-        guardo = bll.Guardar(estudiante);
+        guardo = EstudiantesBll.Guardar(estudiante);
 
         if(guardo)
         {
@@ -112,7 +111,7 @@
     {
         bool elimino;
 
-        elimino= bll.Eliminar(estudiante.EstudianteId);
+        elimino= EstudiantesBll.Eliminar(estudiante.EstudianteId);
 
         if(elimino)
         {

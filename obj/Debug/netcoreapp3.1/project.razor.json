@@ -144,6 +144,59 @@
         }
       },
       {
+        "HashCode": -412832560,
+        "Kind": "Components.Component",
+        "Name": "Ejercicio1_3_2020.Pages.EstudiantesPage",
+        "AssemblyName": "Ejercicio1-3-2020",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EstudiantesPage"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EstudianteId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "EstudianteId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Ejercicio1_3_2020.Pages.EstudiantesPage"
+        }
+      },
+      {
+        "HashCode": 486575912,
+        "Kind": "Components.Component",
+        "Name": "Ejercicio1_3_2020.Pages.EstudiantesPage",
+        "AssemblyName": "Ejercicio1-3-2020",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Ejercicio1_3_2020.Pages.EstudiantesPage"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "EstudianteId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "EstudianteId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Ejercicio1_3_2020.Pages.EstudiantesPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 419282071,
         "Kind": "Components.Component",
         "Name": "Ejercicio1_3_2020.Shared.MainLayout",

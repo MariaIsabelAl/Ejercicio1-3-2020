@@ -2,7 +2,7 @@
 
 namespace Ejercicio1_3_2020.Migrations
 {
-    public partial class Inicial : Migration
+    public partial class Inicia : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

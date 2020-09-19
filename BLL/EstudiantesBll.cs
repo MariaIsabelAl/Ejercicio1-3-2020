@@ -10,13 +10,9 @@ namespace Ejercicio1_3_2020.BLL
 {
     public class EstudiantesBll
     {
-        private Contexto _contexto;
+       
 
-        public EstudiantesBll(Contexto contexto){
-            _contexto = contexto;
-        }
-
-        public bool Guardar(Estudiantes estudiante)
+        public static bool Guardar(Estudiantes estudiante)
         {
             if (!Existe(estudiante.EstudianteId))
                 return Insertar(estudiante);
@@ -24,10 +20,10 @@ namespace Ejercicio1_3_2020.BLL
                 return Modificar(estudiante);
         }
 
-         private bool Insertar(Estudiantes estudiante)
+         private static bool Insertar(Estudiantes estudiante)
         {
             bool paso = false;
-            
+            Contexto _contexto= new Contexto();
 
             try
             {
@@ -47,9 +43,10 @@ namespace Ejercicio1_3_2020.BLL
             return paso;
         }
 
-         public bool Modificar(Estudiantes estudiante)
+         public static bool Modificar(Estudiantes estudiante)
         {
             bool paso = false;
+            Contexto _contexto= new Contexto();
 
             try
             {
@@ -69,9 +66,10 @@ namespace Ejercicio1_3_2020.BLL
             return paso;
         }
 
-        public bool Existe(int id)
+        public static bool Existe(int id)
         {
             bool encontrado = false;
+            Contexto _contexto= new Contexto();
 
             try
             {
@@ -89,9 +87,10 @@ namespace Ejercicio1_3_2020.BLL
             return encontrado;
         }
 
-        public bool Eliminar(int id)
+        public static bool Eliminar(int id)
         {
             bool paso = false;
+            Contexto _contexto= new Contexto();
             try 
             {
                 var eliminar=_contexto.Estudiantes.Find(id);
@@ -111,9 +110,10 @@ namespace Ejercicio1_3_2020.BLL
             return paso;
         }
 
-        public Estudiantes Buscar(int id)
+        public static Estudiantes Buscar(int id)
         {
             Estudiantes estudiantes= new Estudiantes();
+            Contexto _contexto= new Contexto();
 
             try
             {
@@ -131,9 +131,10 @@ namespace Ejercicio1_3_2020.BLL
             return estudiantes;
         }
 
-        public List<Estudiantes> GetList(Expression<Func<Estudiantes, bool>> estudiantes)
+        public static List<Estudiantes> GetList(Expression<Func<Estudiantes, bool>> estudiantes)
         {
             List<Estudiantes> Lista= new List<Estudiantes>();
+            Contexto _contexto= new Contexto();
 
             try
             {
